@@ -21,14 +21,17 @@ h6 {
     margin: 0;
 }
 
-/* fix-container */
+                                /* fix-container */
 .fix-container {
     max-width: 1200px;
     width: 100%;
     display: flex;
 }
 
-                                /* intro */
+
+
+
+                                    /* intro */
 .intro {
     display: flex;
     justify-content: center;
@@ -190,7 +193,10 @@ h6 {
     align-content: center;
 }
 
-                                /* Story */
+
+
+
+                                        /* Story */
 .story {
     display: flex;
     justify-content: center;
@@ -207,11 +213,11 @@ h6 {
 }
 
 .story__headline {
-    line-height: 1.4;
+    line-height: 1.6;
     max-height: 200px;
     max-width: 965px;
     text-align: center;
-    
+
     flex-basis: 100%;
 }
 
@@ -235,50 +241,61 @@ h6 {
     margin: 40px auto 45px;
 
 }
-.lorem{
+
+.lorem {
     max-height: 40px;
     font-family: sans-serif;
     color: #999999;
     font-size: 15px;
 }
-.story__content{
+
+.story__content {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
     max-height: 250px;
 }
-.content__item{
+
+.content__item {
     width: 31.6%;
-    
+
 }
-.content__item:hover .content__img{
+
+.content__item:hover .content__img {
     opacity: 0.7;
 
 }
-.content__img{
-    background: linear-gradient(to top,#fce38a,#f38181) cover;
-    
+
+.content__img {
+    background: linear-gradient(to top, #fce38a, #f38181) cover;
+
 }
-/* нужно сделать затемнение градиентом!!!!! */
+
+            /* нужно сделать затемнение градиентом!!!!! */
 
 
-                            /* merit_monitoring */
-.merit_monitoring{
+
+
+
+                        /* merit_monitoring */
+.merit_monitoring {
     min-height: 270px;
     height: 100%;
     background-color: #95e1d3;
     display: flex;
     justify-content: center;
 }
-.merit_monitoring>.fix-container{
+
+.merit_monitoring>.fix-container {
     justify-content: space-between;
 }
-.merit__item{
+
+.merit__item {
     display: flex;
     width: 100%;
     max-width: 238px;
-    border-right:1px solid #b5eae0;
+    border-right: 1px solid #b5eae0;
     font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     justify-content: center;
@@ -287,34 +304,41 @@ h6 {
     font-size: 14px;
     line-height: 1.5;
 }
-.merit__item:first-child{
-    border-left:1px solid #b5eae0;
+
+.merit__item:first-child {
+    border-left: 1px solid #b5eae0;
 }
-.numb{
+
+.numb {
     font-size: 72px;
     font-weight: 700;
 }
 
-                                                    /* services */
-.services{
+
+
+
+                            /* services */
+.services {
     min-height: 650px;
     display: flex;
     justify-content: center;
 }
-.services>.fix-container{
+
+.services>.fix-container {
     padding: 110px 0px 120px;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
 }
-.services__headline{
+
+.services__headline {
     max-height: 80px;
     max-width: 100%;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.6;
     flex-basis: 100%;
-    margin: 0px auto;
 }
+
 .services__headline>h3 {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive, sans-serif;
@@ -325,6 +349,7 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
+
 .services__headline>h4::after {
     content: '';
     display: block;
@@ -334,14 +359,16 @@ h6 {
     margin: 40px auto 0px;
 
 }
-.services-items{
+
+.services-items {
     display: flex;
     min-height: 240px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.item{
+
+.item {
     box-sizing: border-box;
     position: relative;
     padding-left: 90px;
@@ -351,26 +378,187 @@ h6 {
     width: 100%;
     line-height: 1.1;
 }
-.item>img{
+
+.item>img {
     position: absolute;
     top: 0;
     left: 30px;
 
 }
-.item>h6{
+
+.item>h6 {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
-.item>p{
+
+.item>p {
     font-size: 15px;
     font-family: sans-serif;
 }
-.item:nth-child(-n+3){
+
+.item:nth-child(-n+3) {
     border-bottom: 1px solid #e5e5e5;
 }
-.item:nth-child(n+4){
+
+.item:nth-child(n+4) {
     padding-top: 45px;
 }
-.item:nth-child(n+4)>img{
+
+.item:nth-child(n+4)>img {
     top: 45px;
+}
+
+                        /* unique-design */
+.unique-design {
+    min-height: 850px;
+    display: flex;
+    justify-content: center;
+    background: url(../img/unique-design-background.png) center no-repeat;
+    background-size: cover;
+}
+
+.unique-design>.fix-container {
+    padding-top: 110px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.unique-design>.fix-container>.headline {
+    box-sizing: border-box;
+    max-height: 73px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.6;
+    flex-basis: 100%;
+    margin: 0px auto;
+}
+
+.headline>h3 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
+.headline>h4 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headline>h4::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 40px auto 0px;
+
+}
+
+.devices-ipad {
+    max-height: 580px;
+    align-self: flex-end;
+    margin-left: 335px;
+}
+
+.devices-iphone {
+    max-height: 440px;
+    position: absolute;
+    bottom: -83px;
+    right: 245px;
+    ;
+    z-index: 3;
+}
+
+
+                            /* what-we-do */
+.what-we-do {
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do>.fix-container {
+    padding: 110px 0px 120px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.what-we-do>.fix-container>.headline {
+    text-align: center;
+    line-height: 1.6;
+    flex-basis: 100%;
+    height: 130px;
+    margin: 0px auto;
+}
+
+.lorem {
+    max-height: 40px;
+    font-family: sans-serif;
+    color: #999999;
+    font-size: 15px;
+    margin: 46px auto 92px;
+    flex-basis: 954px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.rectangle {
+    box-sizing: border-box;
+    flex-basis: 600px;
+    height: 380px;
+    margin-left: auto;
+
+    flex-direction: column;
+}
+
+.rectangle_item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 600px;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    padding: 0px 20px 0px 16px;
+}
+
+.rectangle_item:nth-child(1)>.rectangle_picture {
+    margin-right: 15px;
+}
+
+.rectangle_item:nth-child(3)>.rectangle_picture {
+    margin-right: 16px;
+}
+
+.rectangle_item:nth-child(4)>.rectangle_picture {
+    margin-right: 13px;
+}
+
+.rectangle_item:nth-child(1) .arrow {
+    margin-left: auto;
+}
+
+.rectangle_item:nth-child(3) .arrow {
+    margin-left: auto;
+}
+
+.rectangle_item:nth-child(4) .arrow {
+    margin-left: auto;
+}
+
+.rectangle_item:nth-child(2) {
+    border-top: none;
+    height: 181px;
+    padding: 0px 20px 0px 25px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+/* нужно сделать раскрывающийся блок */
+.rectangle_item:nth-child(n+2) {
+    margin-bottom: 10px;
+}
+
+                        /* jon_doe */
+.jon_doe{
+    min-height: 290px;
 }
