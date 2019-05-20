@@ -16,6 +16,7 @@ p {
     font-family: sans-serif;
 }
 
+/* исключаем отступ у заголовков */
 h1,
 h2,
 h3,
@@ -24,6 +25,7 @@ h5,
 h6 {
     margin: 0;
 }
+
 
 /* fix-container */
 .fix-container {
@@ -272,8 +274,12 @@ h6 {
 }
 
 .content__img {
-    background: linear-gradient(to top, #fce38a, #f38181) cover;
+    display: flex;
+    background: linear-gradient( top, #fce38a, #f38181) cover;
 
+}
+.content__img>img{
+    width: 100%;
 }
 
 /* нужно сделать затемнение градиентом!!!!! */
@@ -512,7 +518,6 @@ h6 {
     height: 380px;
     margin-left: auto;
 
-    flex-direction: column;
 }
 
 .rectangle_item {
@@ -668,7 +673,7 @@ h6 {
 }
 
 .team__member>img {
-    height: 470px;
+    width: 100%;
 }
 
 .member-name {
@@ -712,6 +717,10 @@ h6 {
     align-items: center;
 }
 
+.brands__item>div>img{
+    width: 100%;
+}
+
 /* some-work */
 
 .some-work {
@@ -743,10 +752,12 @@ h6 {
     max-width: 480px;
     max-height: 390px;
 }
-
-.works__item:last-child {
-    max-width: 463px;
+.works__item img{
+    width: 100%;
 }
+/* для сжатия img нужно обернуть их в флексконтейнер и задать ширину в 100% */
+
+
 
 /* сделать трансформации и текс поверх картинки */
 
@@ -874,4 +885,114 @@ h6 {
     min-height: 770px;
     display: flex;
     justify-content: center;
+}
+.blog>.fix-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 110px 0px 115px;
+    align-content: flex-start;
+}
+.blog>.fix-container>.headline{
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 99px;
+}
+.blog__cards{
+    box-sizing: border-box;
+    flex-basis: 100%;
+    height: 382px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog__cards>.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.blog__cards>.card>img{
+    box-sizing: border-box;
+    align-self: flex-start;
+    width: 100%;
+}
+.blog__cards>.card>.green-square{
+    box-sizing: border-box;
+    position: absolute;
+    top: 158px;
+    right: 330px;
+
+    display: flex;
+    padding: 15px;
+    width: 60px;
+    height: 70px;
+    background-color: #95e1d3; 
+}
+.blog__cards>.card>.green-square>span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 30px;
+    height: 40px;
+}
+.blog__cards>.card>h5{
+    width: 223px;
+    height: 10px;
+    color: #333333;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin: 20px 0px 20px;
+}
+.blog__cards>.card>p{
+    width: 346px;
+    height: 39px;
+    color: #999999;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.blog__cards>.card>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+.blog__cards>.card>div>img{
+    margin-right: 7px;
+}
+.blog__cards>.card>div>p{
+    margin-right: 19px; 
+    color: #999999;
+}
+
+
+
+                                /* open_map */
+
+
+.open_map{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    background: url(../img/open_map_background.png);
+    background-size: cover;
+}
+.open_map>.fix-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open_map>.fix-container>.headline{
+    box-sizing: border-box;
+    flex-basis: 100%;
+    height: 86px;
+    text-align: center;
+    color: #f38181;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+}
+.open_map>.fix-container>.headline>h4::after {
+    margin: 20px auto;
 }
