@@ -85,7 +85,6 @@
         width: ;
     }
     .devices__ipad {
-        height: auto;
         margin-top: auto;
     }
     .devices__iphone {
@@ -120,9 +119,9 @@
         font-size: 22px;
     }
 
-    .author{
+    .review>.fix-container>.author{
         font-size: 22px;
-        margin-left: 189px;
+        margin-left: 184px;
         margin-top: -78px;
     }
 
@@ -151,9 +150,9 @@
 .review2>.fix-container>p{
     font-size: 22px;
 }
-.author {
+.review2>.fix-container>.author {
     font-size: 22px;
-    margin-left: 205px;
+    margin-left: 210px;
     margin-top: -78px;
 }
 
@@ -164,6 +163,7 @@
 .card{
     max-width: 512px;
     margin-bottom: 39px;
+    padding: 0px 10px;
 }
 .card__photo{
     margin-right: 15px;
@@ -177,7 +177,7 @@
     padding: 50px 0px 55px;
 }
 .blog__cards>.card>.green-square{
-    top: 135px;
+    top: 120px;
     right: 281px
 }
 .blog__cards>.card>h5{
@@ -199,17 +199,175 @@
 }
 }
 
+
+
 @media screen and (max-width:768px) {
+                                            /* intro */
+    nav{
+        padding:0px 10px 0 10px;
+    }
     
+    .intro_title>h2{
+        font-size: 54px;
+    }
+    .intro_title>h1{
+        font-size: 110px; 
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+                                        /* merit_monitoring */
+
+    .numb{
+        font-size: 58px;
+    }
+
+                                            /* services */
+
+    .services>.fix-container{
+        padding: 35px 0px 35px;
+        align-content: space-between;
+
+    }
+
+    
+
+    .services-items{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+                                            /* what-we-do */
+
+    .what-we-do>.fix-container{
+        justify-content: center;
+        padding: 70px 0px 70px;
+    }
+    .lorem {
+        flex-basis: 675px;
+    }
+    .we-do__img {
+        width: 63.7%;
+    }
+
+                                            /* review */
+    .review>.fix-container {
+    padding: 0px 5px;
+
+    }
+    .block {
+        width: 130px;
+        height: 130px;
+    }
+
+    .review>.fix-container>p{
+        font-size: 18px;
+        width: 540px;
+    }
+
+    .author{
+        font-size: 22px;
+        margin-left: 183px;
+        margin-top: -78px;
+    }
+
+                                            /* brands */
+                                            
+
+
+                                            /* review2 */
+
+    .review2>.fix-container{
+        padding: 10px 0px 10px;
+    }
+
+    .speech{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .review2>.fix-container>p{
+        font-size: 18px;
+        width: 540px;
+    }
+
+                                    /* people-say */
+
+    .people-cards{
+        
+    }
+
+    .card{
+        max-width: 365px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .card__photo{
+        margin-right: 0px;
+        
+    }
+    .card__photo>img{
+        height: 75px;
+        width: 75px;
+    }
+    .people__review>.headline{
+        text-align: center;
+    }
+    .people__review>.headline>h4::after {
+        display: none;
+    }
+
+                                        /* blog */
+
+    .blog>.fix-container{
+    padding: 50px 0px 55px;
+    }
+    .blog__cards>.card{
+        padding: 0px 5px;
+    }
+    .blog__cards>.card>.green-square{
+        display: none;
+    }
+    .blog__cards>.card>h5{
+    margin: 10px 0px;
+    }
+    .blog__cards>.card>div{
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    /* mogo-web */
+
+.mogo-web>.fix-container{
+    padding: 20px 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+    .part1{
+    max-width: 380px;
+    }
+    .part3{
+        margin-bottom: 20px;
+    }
 }
+
+
 
 @media screen and (max-width:425px) {
     
 }
 
+
+
 @media screen and (max-width:375px) {
     
 }
+
+
 
 @media screen and (max-width:320px) {
     

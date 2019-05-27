@@ -546,7 +546,7 @@ h6 {
     max-height: 380px;
     height: auto;
     margin-left: auto;
-
+    
 }
 
 .rectangle_item {
@@ -637,7 +637,7 @@ h6 {
     line-height: 36px;
 }
 
-.author {
+.review>.fix-container>.author {
     height: 22px;
     color: #333333;
     font-family: "Kaushan Script";
@@ -837,7 +837,7 @@ h6 {
     font-size: 24px;
     line-height: 36px;
 }
-.author {
+.review2>.fix-container>.author {
     flex-basis: 30%;
     height: 22px;
     color: #333333;
@@ -881,7 +881,7 @@ h6 {
 .people-cards{
     box-sizing: border-box;
     max-width: 1200px;
-    max-height: 391px;
+    min-height: 391px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -889,7 +889,7 @@ h6 {
 .card{
     box-sizing: border-box;
     max-width: 514px;
-    max-height: 161px;
+    min-height: 161px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 69px;
@@ -898,18 +898,15 @@ h6 {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 110px;
-    height: 161px;
+    max-width: 110px;
+    height: auto;
     margin-right: 30px;
 }
-.card__photo{
-    
-    height: auto;
-}
+
 .people__review{
     box-sizing: border-box;
-    width: 374px;
-    height: 149px;
+    max-width: 374px;
+    min-height: 149px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -958,7 +955,7 @@ h6 {
     box-sizing: border-box;
     max-width: 1200px;
     width: 100%;
-    height: 382px;
+    min-height: 382px;
     display: flex;
     justify-content: space-between;
 }
@@ -968,7 +965,7 @@ h6 {
     flex-wrap: nowrap;
     position: relative;
     max-width: 380px;
-    max-height: 382px;
+    min-height: 382px;
 }
 .blog__cards>.card>img{
 
