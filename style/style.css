@@ -253,7 +253,6 @@ h6 {
 
 .lorem {
     box-sizing: border-box;
-    max-height: 40px;
     font-family: sans-serif;
     color: #999999;
     font-size: 15px;
@@ -310,8 +309,7 @@ h6 {
 
 .merit__item {
     display: flex;
-    width: 100%;
-    max-width: 238px;
+    width: 238px;
     border-right: 1px solid #b5eae0;
     font-family: 'Montserrat', sans-serif;
     flex-direction: column;
@@ -379,7 +377,7 @@ h6 {
 
 .services-items {
     display: flex;
-    max-height: 240px;
+    min-height: 240px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -392,7 +390,6 @@ h6 {
     max-height: 120px;
     max-width: 400px;
     height: 100%;
-    width: 100%;
     line-height: 1.1;
 }
 
