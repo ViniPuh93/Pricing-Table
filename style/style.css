@@ -940,7 +940,7 @@ h6 {
 .blog>.fix-container{
     justify-content: center;
     flex-wrap: wrap;
-    padding: 112px 0px 114px;
+    padding: 112px 10px 114px;
     align-content: flex-start;
 }
 .blog>.fix-container>.headline{
@@ -954,7 +954,8 @@ h6 {
     width: 100%;
     min-height: 382px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .blog__cards>.card{
     display: flex;

@@ -177,8 +177,7 @@
     padding: 50px 0px 55px;
 }
 .blog__cards>.card>.green-square{
-    top: 120px;
-    right: 281px
+    display: none;
 }
 .blog__cards>.card>h5{
     margin: 10px 0px;
@@ -331,9 +330,6 @@
     }
     .blog__cards>.card{
         padding: 0px 5px;
-    }
-    .blog__cards>.card>.green-square{
-        display: none;
     }
     .blog__cards>.card>h5{
     margin: 10px 0px;
